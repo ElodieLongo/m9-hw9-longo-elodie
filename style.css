@@ -132,8 +132,17 @@ footer {
   color: var(--off-white);
 }
 
-@media screen and (max-width: 500px) {
-  header > nav{
-    flex: none;
+@media only screen and (max-width: 600px) {
+  nav, {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero, {
+   font-size: 5rem;
+   color: red;
   }
 }
