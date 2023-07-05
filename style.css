@@ -132,17 +132,37 @@ footer {
   color: var(--off-white);
 }
 
-@media only screen and (max-width: 600px) {
-  nav, {
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 0px;
+  }
+  nav {
     flex-direction: column;
     text-align: center;
-    justify-content: center
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .hero, {
-   font-size: 5rem;
-   color: red;
-  }
+    justify-content: center;
+    margin: 10px;}
+  nav > a.logo {
+    margin-left: auto;
+    margin-top: 5px;
+    text-transform: uppercase;
+    }
+    nav > a {
+      margin-bottom: 10px;
+    }
+    main article {
+      padding: 28px 16px;
+    }
+    section.hero > .call-to-action {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
+      padding: 0 48px;
+      margin: 0;
+    }
+    main article {
+      padding: 18px 6px;
+    }
+  
+  
+ 
 }
