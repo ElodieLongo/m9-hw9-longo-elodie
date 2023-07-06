@@ -52,7 +52,8 @@ main a {
   color: var(--danger-color);
 }
 
-main > article, nav{
+main > article,
+nav {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -62,7 +63,7 @@ nav {
   display: flex;
 }
 
-nav > a:not(:first-of-type){
+nav > a:not(:first-of-type) {
   margin-left: 24px;
 }
 
@@ -71,8 +72,9 @@ nav > a.logo {
   text-transform: uppercase;
 }
 
-main > section, main > article {
-  margin-bottom: 96px;
+main > section,
+main > article {
+  margin-bottom: 5px;
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
 }
@@ -112,15 +114,15 @@ main article {
 
 main p {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 5px;
 }
 
-main > article img {
+main > article img{
   float: left;
   width: 300px;
   height: auto;
   margin-right: 24px;
-  margin-bottom: 6px;
+  padding: 10px;
 }
 
 footer {
@@ -134,35 +136,43 @@ footer {
 
 @media only screen and (max-width: 500px) {
   header {
-    padding: 0px;
+    padding: 0;
   }
   nav {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 10px;}
+    margin: 10px;
+  }
   nav > a.logo {
     margin-left: auto;
     margin-top: 5px;
     text-transform: uppercase;
-    }
-    nav > a {
-      margin-bottom: 10px;
-    }
-    main article {
-      padding: 28px 16px;
-    }
-    section.hero > .call-to-action {
-      font-size: 1.5rem;
-      font-weight: 700;
-      text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
-      padding: 0 48px;
-      margin: 0;
-    }
-    main article {
-      padding: 18px 6px;
-    }
-  
-  
- 
+  }
+  nav > a {
+    margin-bottom: 5px;
+  }
+
+  section.hero > .call-to-action {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
+    padding: 0 48px;
+    margin: 0;
+  }
+
+  section.hero > button {
+    padding: 10px 20px;
+  }
+
+  main article {
+    padding: 24px;
+  }
+
+  main > article img {
+    float: none;
+    margin:auto;
+    display: block;
+    margin-bottom: 10px;
+  }
 }
